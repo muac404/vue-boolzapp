@@ -1,3 +1,6 @@
+/* --------- RESET -------- */
+
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -5,6 +8,25 @@
 
 }
 
+ /* --------- MAIN -------- */
+
+
 body{
     font-family: 'Lato', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(212,219,217);
+    background: linear-gradient(0deg, rgba(212,219,217,1) 43%, rgba(0,150,136,1) 43%);
+   
+    
+}
+
+.container{
+    height: calc(100vh - 50px);
+    margin: auto auto;
+    width: 1100px;
+   
+    background-image: url("../img/mine.jpg")
 }
