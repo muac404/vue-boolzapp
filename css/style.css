@@ -41,14 +41,71 @@ body{
 
 }
 
-.me-box{
+.me-dashboard{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-me-box{
     background-color: #eaeaea;
     height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.right-me-box{
+    background-color: #eaeaea;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.right-me-box i{
+    color: grey;
+    margin: 10px;
+}
+
+.user-avatar img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.user-avatar{
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    
 }
 
 .notification-box{
     background-color: #8edafc;
     height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.notification-icon{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    
+   
+}
+
+.notification-icon i{
+    color: white;
+    margin-left: 15px;
+    font-size: 25px;
+    
+}
+.notification-link{
+    margin-left: 20px;
+}
+.notification-link a{
+    color: grey;
+    font-size: 12px;
 }
 
 .search-box{
