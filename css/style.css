@@ -17,9 +17,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(212,219,217);
-    background: linear-gradient(0deg, rgba(212,219,217,1) 43%, rgba(0,150,136,1) 43%);
-   
+    /* background: rgb(212,219,217);
+    background: linear-gradient(0deg, rgba(212,219,217,1) 43%, rgba(0,150,136,1) 43%); */
+   background-image: url("../img/Senza\ titolo-1.png");
     
 }
 
