@@ -155,7 +155,12 @@ body{
     height: 60px;
     padding: 5px;
     border-bottom: 1px solid #e9ebeb;
+    cursor: pointer;
     
+}
+
+.contact:hover{
+    background-color: #e9ebeb;
 }
 
 .small-grey{
@@ -234,10 +239,12 @@ body{
     padding-left: 20px;
     font-size: 20px;
     color: grey;
+    cursor: pointer;
 }
 
 .mic{
     padding-right: 20px;
     font-size: 20px;
     color: grey;
+    cursor: pointer;
 }
