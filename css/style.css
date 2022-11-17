@@ -64,11 +64,17 @@ body{
 .right-me-box i{
     color: grey;
     margin: 10px;
+    cursor: pointer;
 }
 
 .user-avatar img{
     width: 100%;
     border-radius: 50%;
+    cursor: pointer;
+}
+
+.user-avatar img:hover{
+    border: 2px solid #8edafc;
 }
 
 .user-avatar{
@@ -118,13 +124,14 @@ body{
 
 .search-box i{
     color: grey;
+    
 }
 .src-btn{
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
-    border: 1px solid lightgray;
+    border: 1px solid #e9ebeb;
     background-color: white;
 }
 
@@ -134,7 +141,7 @@ body{
     padding-top: 5px;
     padding-bottom: 5px;
     width: 300px;
-    border: 1px solid lightgray;
+    border: 1px solid #e9ebeb;
 }
 .contact-box{
     background-color: white;
@@ -147,6 +154,7 @@ body{
     justify-content: space-between;
     height: 60px;
     padding: 5px;
+    border-bottom: 1px solid #e9ebeb;
     
 }
 
@@ -156,7 +164,7 @@ body{
 }
 
 .active{
-background-color: #e9ebeb;
+    background-color: #e9ebeb;
 }
 .contact-preview{
     display: flex;
@@ -174,9 +182,29 @@ background-color: #e9ebeb;
     
 }
 
-.chat-contact-box-{
+.l-contact-box{
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.r-contact-box{
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.r-contact-box i{
+    margin: 10px;
+    color: grey;
+    cursor: pointer;
+}
+
+.chat-contact-box{
     background-color: #eaeaea;
     height: 60px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .chat{
@@ -187,4 +215,29 @@ background-color: #e9ebeb;
 .qwerty{
     background-color: #f3eeea;
     height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-message{
+    width: 600px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #e9ebeb;
+    border-radius: 5px;
+}
+
+.emoji{
+    padding-left: 20px;
+    font-size: 20px;
+    color: grey;
+}
+
+.mic{
+    padding-right: 20px;
+    font-size: 20px;
+    color: grey;
 }
