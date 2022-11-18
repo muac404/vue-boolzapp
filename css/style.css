@@ -232,6 +232,15 @@ body{
     /* width: 300px; */
 }
 
+.container-flex{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container-flex-r{
+    display: flex;
+    justify-content: flex-start;
+}
 .received{
     background-color: #d5f9ba;
     text-align: right;
