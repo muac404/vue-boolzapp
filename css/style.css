@@ -145,7 +145,7 @@ body{
 }
 .contact-box{
     background-color: white;
-    
+    overflow: auto;
     flex-grow: 1;
 }
 
