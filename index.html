@@ -26,6 +26,7 @@
                     <!-- DASHBOARD LEFT -->
                     <section class="left-section">
                         <div class="me-dashboard">
+                            
                             <div class="left-me-box">
                                 <div class="user-avatar">
                                     <img src="img/avatar_io.jpg" alt="user-profile">
@@ -62,18 +63,18 @@
                         </div>
                         <div class="contact-box">
 
-                            <div class="contact active">
+                            <div class="contact" v-for="contact in contacts">
 
                                 <div class="contact-preview">
 
                                     <div class="user-avatar">
 
-                                        <img src="img/avatar_1.jpg" alt="user-profile">
+                                        <img :src="`img/avatar${contact.avatar}.jpg`" alt="user-profile">
 
                                     </div>
 
                                     <div class="user-fullname">
-                                        <h5>Michele</h5>
+                                        <h5>{{contact.name}}</h5>
                                         <div class="small-grey">Ultimo messaggio inviato</div>
                                     </div>
 
@@ -84,7 +85,7 @@
                                 
                             </div> 
 
-                            <div class="contact">
+                            <!-- <div class="contact">
 
                                 <div class="contact-preview">
 
@@ -104,9 +105,9 @@
                                 <div class="small-grey">12:00 </div>
 
                                 
-                            </div> 
+                            </div>  -->
 
-                            <div class="contact">
+                            <!-- <div class="contact">
 
                                 <div class="contact-preview">
 
@@ -126,7 +127,7 @@
                                 <div class="small-grey">12:00 </div>
 
                                 
-                            </div> 
+                            </div>  -->
 
                         </div>
                     </section>
@@ -162,7 +163,7 @@
                                     <div class="received chat-text">Hai portato a spasso il cane?</div>
                                 </div>
                                 <div class="container-flex">
-                                    <div class="received chat-text">ricordati di stendere i panni</div>
+                                    <div class="received chat-text">{{message}}</div>
                                 </div>
                                 <div class="container-flex-r">
                                     <div class="sent chat-text">Tutto fatto!</div>
