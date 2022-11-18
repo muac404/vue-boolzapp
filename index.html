@@ -75,7 +75,7 @@
 
                                     <div class="user-fullname">
                                         <h5>{{contact.name}}</h5>
-                                        <div class="small-grey">{{contact.messages.message}}</div>
+                                        <div class="small-grey">{{contact.messages[0].message}}</div>
                                     </div>
 
                                 </div>
@@ -158,16 +158,11 @@
                         </div>
 
                         <div class="chat">
-                            <div class="chat-container"  v-for="message in contacts[currentContact].messages">
-                                <div class="container-flex">
-                                    <div class="received chat-text"></div>
-                                </div>
-                                <div class="container-flex">
-                                    <div class="received chat-text"></div>
-                                </div>
-                                <div class="container-flex-r">
-                                    <div class="sent chat-text"></div>
-                                </div>    
+                            <div v-for="message in contacts[currentContact].messages" class="chat-container container-flex-r">
+                                <div class="received chat-text" :class="message.status">{{ message.message }}</div>
+
+                              
+                                
                             </div>
                         </div>
                         <div class="qwerty">
