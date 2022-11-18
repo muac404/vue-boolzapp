@@ -75,7 +75,7 @@
 
                                     <div class="user-fullname">
                                         <h5>{{contact.name}}</h5>
-                                        <div class="small-grey">Ultimo messaggio inviato</div>
+                                        <div class="small-grey">{{contact.messages.message}}</div>
                                     </div>
 
                                 </div>
@@ -158,15 +158,15 @@
                         </div>
 
                         <div class="chat">
-                            <div class="chat-container">
+                            <div class="chat-container"  v-for="message in contacts[currentContact].messages">
                                 <div class="container-flex">
-                                    <div class="received chat-text">Hai portato a spasso il cane?</div>
+                                    <div class="received chat-text"></div>
                                 </div>
                                 <div class="container-flex">
-                                    <div class="received chat-text">{{message}}</div>
+                                    <div class="received chat-text"></div>
                                 </div>
                                 <div class="container-flex-r">
-                                    <div class="sent chat-text">Tutto fatto!</div>
+                                    <div class="sent chat-text"></div>
                                 </div>    
                             </div>
                         </div>
