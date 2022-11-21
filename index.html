@@ -138,7 +138,7 @@
                     <!-- DASHBOARD RIGHT -->
                     <section class="right-section">
                         <div class="chat-contact-box">
-                            <div v-for="contact in contacts" class="l-contact-box" v-show="contacts.visible === true">
+                            <div v-for="contact in contacts" class="l-contact-box" v-show="contact.visible === true">
                                 <div class="user-avatar">
                                     <img :src="`img/avatar${contact.avatar}.jpg`" alt="user-profile">
                                 </div>
@@ -161,8 +161,7 @@
                         <div class="chat">
                             <div v-for="message in contacts[currentContact].messages" class="chat-container container-flex-r" :class="message.status">
 
-                                <div class="chat-text"> {{ message.message }}
-                            </div>
+                                <div class="chat-text"> {{ message.message }} </div>
 
                               
                                 
