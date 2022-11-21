@@ -63,7 +63,7 @@
                         </div>
                         <div class="contact-box">
 
-                            <div class="contact" v-for="contact in contacts">
+                            <div @click="activeChat" class="contact" v-for="contact in contacts">
 
                                 <div class="contact-preview">
 
@@ -138,13 +138,13 @@
                     <!-- DASHBOARD RIGHT -->
                     <section class="right-section">
                         <div class="chat-contact-box">
-                            <div class="l-contact-box">
+                            <div v-for="contact in contacts" class="l-contact-box" v-show="contacts.visible === true">
                                 <div class="user-avatar">
-                                    <img src="img/avatar_1.jpg" alt="user-profile">
+                                    <img :src="`img/avatar${contact.avatar}.jpg`" alt="user-profile">
                                 </div>
                                 <div class="user-fullname">
-                                    <h5>Michele</h5>
-                                    <div class="small-grey">Ultimo accesso oggi alle 12:00</div>
+                                    <h5>{{ contact.name }}</h5>
+                                    <div class="small-grey">{{ contact.messages[0].date}}</div>
                                 </div>
                             </div>  
                             
@@ -157,9 +157,12 @@
                             </div>  
                         </div>
 
+
                         <div class="chat">
-                            <div v-for="message in contacts[currentContact].messages" class="chat-container container-flex-r">
-                                <div class="received chat-text" :class="message.status">{{ message.message }}</div>
+                            <div v-for="message in contacts[currentContact].messages" class="chat-container container-flex-r" :class="message.status">
+
+                                <div class="chat-text"> {{ message.message }}
+                            </div>
 
                               
                                 
