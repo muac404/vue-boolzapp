@@ -221,6 +221,7 @@ body{
     width: 700px;
     margin: auto;
     padding-top: 15px;
+    position: relative;
     
 }
 
@@ -247,7 +248,7 @@ body{
     background-color: white;
     display: flex;
     justify-content: flex-start;
-    padding: 10px 20px;
+    padding: 15px 20px;
     border-radius: 10px;
     margin-top: 10px;
     
@@ -258,11 +259,20 @@ body{
     display: flex;
     background-color: #d5f9ba;
     justify-content: flex-end;
-    padding: 10px 20px;
+    padding: 15px 20px;
     border-radius: 10px;
     margin-top: 10px;
     
     
+}
+
+.message-date{
+    font-size: 8px;
+    color: grey;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 5px;
 }
 .qwerty{
     background-color: #f3eeea;

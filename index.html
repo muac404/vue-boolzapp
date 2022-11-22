@@ -162,6 +162,7 @@
                             <div v-for="message in contacts[currentContact].messages" class="chat-container container-flex-r" :class="message.status">
 
                                 <div class="chat-text"> {{ message.message }} </div>
+                                <div class="message-date">{{ message.date }}</div>
 
                               
                                 
